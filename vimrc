@@ -1,12 +1,25 @@
 set hlsearch
+
 set expandtab
 set tabstop=4
 set shiftwidth=4
-set autoindent
+set softtabstop=4
+
+"set autoindent
+set cindent
+
 set ruler
 set showmode
 set bg=dark
 set nu
+
+"terminal的title會設成filename
+"set title
+
+" 可以用 {{{ }}} 縮排 Folded
+set foldmethod=marker
+"預設關閉
+set foldlevel=0
 
 "編碼設定
 set fileencoding=utf-8
@@ -16,6 +29,8 @@ set enc=utf-8
 set tenc=utf8
 
 nmap <F5> <ESC>:NERDTree<CR>
+nnoremap <silent> <F8> :set paste<CR>
+nnoremap <silent> <F9> :set nopaste<CR>
 
-colorscheme torte
+colorscheme peachpuff
 syntax on
