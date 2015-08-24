@@ -5,8 +5,9 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 
-"set autoindent
-set cindent
+set autoindent
+"C語言的縮排方法
+"set cindent
 
 set ruler
 set showmode
