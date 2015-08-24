@@ -14,7 +14,7 @@ set showmode
 set bg=dark
 set nu
 "底線
-set cursorline
+"set cursorline
 
 "terminal的title會設成filename
 "set title
