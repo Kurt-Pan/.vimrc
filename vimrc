@@ -31,9 +31,19 @@ set termencoding=utf-8
 set enc=utf-8
 set tenc=utf8
 
-nmap <F5> <ESC>:NERDTree<CR>
+nmap <silent> <F5> <ESC>:NERDTree<CR>
+
+"縮排對齊線addon，預設關閉。
+nmap <silent> <F6> <ESC>:IndentLinesToggle<CR>
+let g:indentLine_enabled = 0
+
 nnoremap <silent> <F8> :set paste<CR>
 nnoremap <silent> <F9> :set nopaste<CR>
 
 colorscheme peachpuff
 syntax on
+
+"改變背景顏色顏色
+"highlight Comment ctermbg=DarkGray
+"改變字體顏色
+"highlight Comment ctermfg=DarkGray
