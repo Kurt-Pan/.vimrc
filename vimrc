@@ -37,6 +37,11 @@ nmap <silent> <F5> <ESC>:NERDTree<CR>
 nmap <silent> <F6> <ESC>:IndentLinesToggle<CR>
 let g:indentLine_enabled = 0
 
+"自動補齊括號
+inoremap ( ()<ESC>i
+inoremap [ []<ESC>i
+inoremap { {}<ESC>i
+
 nnoremap <silent> <F8> :set paste<CR>
 nnoremap <silent> <F9> :set nopaste<CR>
 
