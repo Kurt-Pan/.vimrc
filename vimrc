@@ -1,4 +1,35 @@
+"vundle config
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'scrooloose/nerdtree'
+Plugin 'Lokaltog/vim-powerline'
+Plugin 'Yggdroot/indentLine'
+
+call vundle#end()            " required
+filetype plugin indent on    " required
+
 set hlsearch
+
+" shown powerline in sigle buffer
+set laststatus=2
+
+map <C-t>l <ESC>:tabnext<CR>
+map <C-t>h <ESC>:tabprev<CR>
+map <C-t>n <ESC>:tabnew<CR>:NERDTree<CR>
+map <C-t>c <ESC>:tabclose<CR>
+map <C-t>0 <ESC>:tabfirst<CR>
+map <C-t>$ <ESC>:tablast<CR>
+map <C-t>q <ESC>:qall<CR>
 
 set expandtab
 set tabstop=4
@@ -47,6 +78,11 @@ nnoremap <silent> <F9> :set nopaste<CR>
 
 colorscheme peachpuff
 syntax on
+
+"改變背景顏色顏色
+"highlight Comment ctermbg=DarkGray
+"改變字體顏色
+"highlight Comment ctermfg=DarkGray
 
 "改變背景顏色顏色
 "highlight Comment ctermbg=DarkGray
